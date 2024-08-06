@@ -8,6 +8,7 @@ export default async function handler(req, res) {
 
 	const client = new OpenAI({
 		apiKey: process.env.API_KEY,
+		dangerouslyAllowBrowser: true
 	});
 
     try{
