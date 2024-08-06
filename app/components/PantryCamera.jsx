@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, TextField, Typography, Modal, Dialog, DialogTitle,DialogContent, DialogContentText, DialogActions } from '@mui/material';
+import { Box, Button, Dialog, DialogTitle,DialogContent, DialogContentText, DialogActions } from '@mui/material';
 import { useState, useRef } from 'react'
 import { Camera } from 'react-camera-pro';
 import { Cancel } from '@mui/icons-material';
@@ -103,7 +103,7 @@ const PantryCamera = ( {updateInventory}) => {
         <DialogTitle> Photo Taken </DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Review the Photo. Click "Add" to save the item or "Cancel" to discard.
+            Review the Photo. Click Add to save the item or Cancel to discard.
           </DialogContentText>
           <img src={image} width={500} alt={'Taken photo'}/>
         </DialogContent>
